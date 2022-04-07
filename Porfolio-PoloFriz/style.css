@@ -165,6 +165,7 @@ p {
     margin: 2rem auto;
     padding: 1rem;
     max-width: 800px;
+    max-height: 320px;
 
 }
 
@@ -225,7 +226,7 @@ p {
     background-color: var(--white-color);
 }
 
-/* colo de la carita */
+/* color de la carita */
 .contact-form-response svg {
     margin-top: 2rem;
     width: 4rem;
@@ -281,9 +282,17 @@ p {
 /* estetica del titulo */
 .hero-image-title {
     color: var(--hero-text-color); /* reutilizado del html */
-    font-size: 7.5vw; /* 7,5% del tamaño de la pantalla */
+    font-size: 4.5vw; /* 4,5% del tamaño de la pantalla */
 
 }
+
+.hero-image-content {
+    width: 100%;
+    min-width: 320px;
+
+}
+
+
 
 
 
@@ -454,10 +463,10 @@ progress::-moz-progress-bar{
 /****************** Utilities para reutilizar ******************/
 
 .avatar {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-}
+   /*  border-radius: 50%; */
+    width: 450px;
+    height: 300px;
+} 
 
 /* Fondo gris claro "servicios" */
 .bg-gray-light {
@@ -490,6 +499,12 @@ progress::-moz-progress-bar{
 /* foto perfil - escala de grises */
 .gray-scale {
     filter: grayscale(1);
+    border-radius: 10%;
+}
+
+.iconos {
+    width: 20px;
+    height: 20px;
 }
 
 /* para ocultar la cruz del boton */
@@ -639,8 +654,8 @@ progress::-moz-progress-bar{
     top: 0;
     left: 0;
     /* width: 100%; 
-    height: 100%;              
-    padding: 1em; */                                 /* DIFERENTE */
+    height: 100%;     */         /* DIFERENTE */
+    padding: 1em;                      
     background-color: var(--first-alpha-color);
     color: var(--white-color);
     opacity: 0;
@@ -657,10 +672,16 @@ progress::-moz-progress-bar{
 
 /* Recuadro blanco de cada proyecto */
 .portfolio-card-info > div {
-    /* padding: 1em; */                              /* DIFERENTE */
+    /* padding: 1em; */          /* DIFERENTE */
     border: thin solid var(--white-color);
     width: 100%; 
     height: 100%; 
+}
+
+/* centrar el titulo del proyecto */
+.portfolio-card-info > div > h3 {
+    display: flex;
+    justify-content: center;
 }
 
 /* estetica del cuadrito que se abre en cada proyecto */
@@ -670,7 +691,14 @@ progress::-moz-progress-bar{
     display: flex;
     flex-direction: column;
     background-color: var(--white-color);
+    align-items: center;
+}
 
+.img-proyecto {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    align-items: center;
 }
 
 /* subrayado del titulo de cada proyecto */
@@ -684,10 +712,11 @@ progress::-moz-progress-bar{
 /* detalles finales del cuadro de cada proyecto */
 .portfolio-details {
     display: grid;
-    grid-template-columns: 40% 60%; /* 40 a los titulos y 60 a la descripcion */
+    grid-template-columns: 30% 70%; /* 40 a los titulos y 60 a la descripcion */
     grid-auto-rows: 2rem; /* distancia de las filas implicitas */
 }
 
+/* Titulos de los cuadros de cada proyecto */
 .portfolio-details b {
     color: var(--first-color);
 }

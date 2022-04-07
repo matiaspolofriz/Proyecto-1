@@ -11,10 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
     <title> Portafolio CV - Polo Friz Matias</title>
-    <meta name="description" content="Bienvenidos a mi Portafolio Profesiona, soy Matias Polo Friz, Desarrollador Web">
-    <link rel="canonical" href="https://matiaspolofriz.github.io/proyecto-1/portfolio-polofriz">
-    <link rel="favicon" href="https://matiaspolofriz.github.io/proyecto-1/portfolio-polofriz/assets/favicon.png">
-    <link rel="apple-touch-icon" href="https://matiaspolofriz.github.io/proyecto-1/portfolio-polofriz/assets/favicon.png">
+    <meta name="description" content="Bienvenidos a mi Portafolio Profesional, soy Matias Polo Friz, Desarrollador Web">
+    <link rel="canonical" href="https://matiaspolofriz.github.io/proyecto-1/proyecto-1">
+    <link rel="favicon" href="https://matiaspolofriz.github.io/proyecto-1/proyecto-1/assets/favicon.png">
+    <link rel="apple-touch-icon" href="https://matiaspolofriz.github.io/proyecto-1/proyecto-1/assets/favicon.png">
     <meta name="theme-color" content="#d90062"> <!-- cambia el color de la barrra de chrome -->
 
     <meta name="twitter:card" content="summary"> <!-- Exclusiva de Tw -->
@@ -22,12 +22,13 @@
 
     <!-- Tw, Insta, Face -->
     <meta property="og:title" name="twitter:title" content="Portafolio CV - Polo Friz Matias">
-    <meta property="og:image" name="twitter:image" content="https://matiaspolofriz.github.io/proyecto-1/portfolio-polofriz/assets/hero-image-home.jpg">
-    <meta property="og:url" name="twitter:url" content="https://matiaspolofriz.github.io/proyecto-1/portfolio-polofriz">
+    <meta property="og:image" name="twitter:image" content="https://matiaspolofriz.github.io/proyecto-1/proyecto-1/assets/hero-image-home.jpg">
+    <meta property="og:url" name="twitter:url" content="https://matiaspolofriz.github.io/proyecto-1/proyecto-1">
     <meta property="og:description" name="twitter:description" content="Bienvenidos a mi Portafolio Profesiona, soy Matias Polo Friz, Desarrollador Web">
 
-
 </head>
+
+
 
 <body>
     <header class="header">
@@ -47,7 +48,7 @@
                 <a href="#acerca">Acerca</a>
                 <a href="#servicios">Servicios</a>
                 <a href="#portafolio">Portafolio</a>
-                <a href="#testimonios">Testimonios</a>
+                <a href="#testimonios">Cursos Finalizados</a>
                 <a href="#contacto">Contacto</a>
             </nav>
         </section>
@@ -55,7 +56,7 @@
 
 <!-- Pantalla principal / fondo pantalla -->
     <section id="inicio" class="home">
-        <article class="hero-image" style="--hero-image:url('assets/hero-image-home.jpg'); --hero-attachment: fixed;"> <!-- fixed para que haga scroll de arriba a abajo, img fija -->
+        <article class="hero-image" style="--hero-image:url('assets/PC-sola.jpg'); --hero-attachment: fixed;"> <!-- fixed para que haga scroll de arriba a abajo, img fija -->
             <aside class="hero-image-opacity" style="--hero-opacity-color:var(--black-alpha-color);">
                 <div class="hero-image-content">
                     <h2 class="hero-image-title" style="--hero-text-color:var(--white-color);">Hola! <br>Soy Matias Polo Friz
@@ -68,76 +69,77 @@
 
 <!-- Acerca -->
     <section id="acerca" class="about section container full-lg-screen">
-        <article class="text-left text-lg-right"> <!--  text a la derecha -->
+        <article class="text-left text-lg-right"> <!-- Nombre -->        <!--  text a la derecha -->
             <aside class="text-center text-lg-right"> <!--  text a la derecha -->
                 <h1>Matias Polo Friz</h1>
-                <h5><i>Developor front-end</i></h5>
+                <h5><i>Developer front-end</i></h5>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit obcaecati necessitatibus provident repellat facere ad earum incidunt aut tempore voluptatibus ut laboriosam ab eligendi veniam blanditiis laudantium maxime, ullam voluptate!
+                    Nacido en Cordoba, Argentina y recibido 
+                    de Contador Publico en la UNR de Rosario. Me considero un apasionado de la programaion, una persona resolutiva y con gran responsabilidad. Excelente adaptacion a equipos de trabajo. Y con ganas de seguir aprendiendo en este mundo de la programacion.
                 </p>
                 <div class="text-center text-lg-left"> <!--  boton a la izq -->
                     <a class="btn" href="assets/CV-Polo.pdf" target="_blank" rel="noopener">DESCARGA MI CV</a>
                 </div>
             </aside>
-        </article> <!-- Nombre -->
+        </article> 
 
-        <article>
+        <article> <!-- Foto perfil -->
             <img class="gray-scale" src="assets/foto-Polo.jpeg" alt="matiaspolofriz">
-        </article> <!-- Foto perfil -->
+        </article> 
 
-        <article>
+        <article> <!-- Habilidades -->
             <h2 class="text-center text-lg-left">Mis habilidades</h2> <!--  titulo a la izq -->
-            <div class="progress">
-                <p>
-                    <b>Desarrollo <i>Web Frontend</i></b>
-                    <b>70%</b>
-                </p>
-                <progress value="70" min="0" max="100">
 
+            <div class="progress"> <!-- Habilidad 1 -->
+                    <p>
+                        <b><img class="iconos" src="assets/icono-html.svg" alt="HTML"> <i>HTML</i></b>
+                        <b>90%</b>
+                    </p>
+
+                <progress value="90" min="0" max="100">
                 </progress>
-            </div> <!-- Habilidad 1 -->
+               
+            </div> 
 
-            <div class="progress">
+            <div class="progress"> <!-- Habilidad 2 -->
                 <p>
-                    <b>Diseño<i>Web</i></b>
-                    <b>40%</b>
+                    <b><img class="iconos" src="assets/icono-css.svg" alt="CSS"><i>Css</i></b>
+                    <b>80%</b>
                 </p>
-                <progress value="40" min="0" max="100">
 
+                <progress value="80" min="0" max="100">
                 </progress>
-            </div> <!-- Habilidad 2 -->
+            </div> 
 
-            <div class="progress">
+            <div class="progress"> <!-- Habilidad 3 -->
                 <p>
-                    <b>Otros <i>Web Frontend</i></b>
-                    <b>50%</b>
+                    <b><img class="iconos" src="assets/icono-js.svg" alt="JavasScript"><i>JavaScript</i></b>
+                    <b>60%</b>
                 </p>
-                <progress value="50" min="0" max="100">
 
+                <progress value="60" min="0" max="100">
                 </progress>
-            </div> <!-- Habilidad 3 -->
+            </div> 
 
-            <div class="progress">
+            <div class="progress"> <!-- Habilidad 4 -->
                 <p>
-                    <b>Desarrollo <i>Web Backend</i></b>
+                    <b><img class="iconos" src="assets/icono-react.svg" alt="React"><i>React</i></b>
+                    <b>20%</b>
+                </p>
+                <progress value="20" min="0" max="100">
+                </progress>
+            </div> 
+
+            <div class="progress"> <!-- Habilidad 5 --> 
+                <p>
+                    <b><img class="iconos" src="assets/icono-redus.svg" alt="Redus"> <i>Redus</i></b>
                     <b>10%</b>
                 </p>
                 <progress value="10" min="0" max="100">
-
                 </progress>
-            </div> <!-- Habilidad 4 -->
+            </div> 
 
-            <div class="progress">
-                <p>
-                    <b> <i>Social media</i></b>
-                    <b>70%</b>
-                </p>
-                <progress value="70" min="0" max="100">
-
-                </progress>
-            </div> <!-- Habilidad 5 -->
-
-        </article> <!-- Habilidades -->
+        </article> 
 
     </section>
 
@@ -211,11 +213,11 @@
 
             <!-- Proyecto 1 -->
             <a href="#trabajo-1" class="portfolio-card">
-                <img src="assets/portfolio-1.jpg" alt="Trabajo 1">
+                <img src="assets/proyecto-1.PNG" alt="Trabajo 1">
                 <aside class="portfolio-card-info">
                     <div>
-                        <h3>Proyecto 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sint asperiores cum facilis libero corrupti, repellendus autem nostrum sunt! Nulla velit ducimus deleniti dolorem enim natus dignissimos explicabo neque! Repellendus.</p>
+                        <h3>Portfolio Personal</h3>
+                        <p>Mi primer gran proyecto, realize un porfolio personal para que conozcan cuales son mis fortalezas y a su vez poder demostrar mi habilidades. Todo fue realizado con HTML y CSS para conocer mas al detalle de ambos.</p>
                     </div>
                 </aside> 
             </a>
@@ -283,20 +285,20 @@
                     <a href="#cerrar" class="modal-close">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/></svg></a>
                         <article class="portfolio-modal">
-                            <img src="assets/portfolio-1.jpg" alt="trabajo 1">
+                            <img class="img-proyecto" src="assets/proyecto-1b.PNG" alt="trabajo 1">
                             <div class="portfolio-info">
-                                <h3>NOMBRE DEL PROYECTO 1</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum asperiores modi vitae laudantium facere, nostrum vel beatae expedita veritatis. Inventore nobis commodi dolorum voluptas, recusandae error voluptate in cupiditate sit.
+                                <h3>Porfolio Personal</h3>
+                                <p>Mi primer gran proyecto, realize un porfolio personal para que conozcan cuales son mis fortalezas y a su vez poder demostrar mi habilidades. Todo fue realizado con HTML y CSS para conocer mas al detalle de ambos.
                                 </p>
                                 <aside class="portfolio-details">
                                     <small><b>CLIENTE</b></small>
                                     <small>Nombre del cliente</small>
-                                    <small><b>FECHA</b></small>
-                                    <small>05/04/22</small>
-                                    <small><b>TIPO</b></small>
-                                    <small>diseño Web</small>
+                                    <small><b>FINALIZADO</b></small>
+                                    <small>07/04/22</small>
+                                    <small><b>LENGUAJES</b></small>
+                                    <small>HTML, CSS, JS</small>
                                     <small><b>ENLACE</b></small>
-                                    <small><a href="https://proyecto.com" target="_blank" rel="noopener">https://laURLdelproyecto.com</a></small>
+                                    <small><a href="https://matiaspolofriz.github.io/proyecto-1/proyecto-1" target="_blank" rel="noopener">https://matiaspolofriz.github.io/proyecto-1/proyecto-1</a></small>
                                 </aside>
                             </div>
                         </article>
@@ -427,21 +429,14 @@
                         </article>
                 </div>
             </article>
-
-            <article class="modal" id="trabajo-2">
-                <div class="modal-content">
-                    <a href="#cerrar" class="modal-close"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/></svg></a>
-                    <h2>Contenido del modal 2</h2>
-                </div>
-            </article>
-
-<!-- Testimonios -->
+ 
+<!-- Cursos Finalizados -->
     <section id="testimonios" class="testimonials">
-        <article class="hero-image" style="--hero-image:url('assets/hero-image-customers.jpg'); --hero-attachment: scroll;"> <!-- fixed para que haga scroll de arriba a abajo, img fija -->
+        <article class="hero-image full-lg-screen" style="--hero-image:url('assets/hero-image-customers.jpg'); --hero-attachment: scroll;"> <!-- fixed para que haga scroll de arriba a abajo, img fija -->
             <aside class="hero-image-opacity" style="--hero-opacity-color:var(--while-alpha-color);">
                 <div class="hero-image-content">
                     <div class="container">
-                        <h2 class="section-title">Mis clientes dicen</h2>
+                        <h2 class="section-title ">Cursos Finalizados</h2>
                         <article class="carousel" style="--carousel-bg-color: var(--while-alpha-color)">
                             <input type="radio" name="slides" id="slide-1" checked>
                             <input type="radio" name="slides" id="slide-2">
@@ -449,25 +444,26 @@
                             <input type="radio" name="slides" id="slide-4">
                             
                                 <ul class="slides">
-                                    <li class="slide"><img class="avatar" src="assets/customer-1.jpg" alt="Cliente 1">
-                                        <blockquote>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non eum aliquid molestiae atque, quidem sint laborum recusandae tenetur beatae earum vitae ducimus quis enim quisquam voluptatum. Voluptatem adipisci sint quo.</blockquote>
-                                        <h3 class="text-first-color">NOMBRE DEL CLIENTE</h3>
-                                        <h6>Puesto del cliente</h6>
+                                    <li class="slide"><img class="avatar" src="assets/freecodecamp-js.JPG" alt="Curso 1">
+                                        <blockquote>Si nos queremos enfocar en el mundo del Frontend, sin dudas JavasScript es el lenguaje que mejor le queda.  Multiples opciones, librerias, una sintaxis simple, 
+                                        <br> entre otros; lo convierten en un excelente lenguaje de programacion.</blockquote>
+                                        <h3 class="text-first-color">JavaScript</h3>
+                                        <h6>Free Code Camp</h6>  <!-- Curso 1 -->
                                     </li>
-                                    <li class="slide"><img class="avatar" src="assets/customer-2.jpg" alt="Cliente 2">
-                                        <blockquote>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non eum aliquid molestiae atque, quidem sint laborum recusandae tenetur beatae earum vitae ducimus quis enim quisquam voluptatum. Voluptatem adipisci sint quo.</blockquote>
-                                        <h3 class="text-first-color">NOMBRE DEL CLIENTE</h3>
-                                        <h6>Puesto del cliente</h6>
+                                    <li class="slide"><img class="avatar" src="assets/EDteam-programacion desde cero.jfif" alt="Curso 2">
+                                        <blockquote>Desarrollamos las bases de la programacion, con aspectos generales, para luego entender como realizar la sintaxis de cualquier lenguaje de programacion.</blockquote>
+                                        <h3 class="text-first-color">Programacion desde cero</h3>
+                                        <h6>ED Team</h6>  <!-- Curso 2 -->
                                     </li>
-                                    <li class="slide"><img class="avatar" src="assets/customer-1.jpg" alt="Cliente 3">
-                                        <blockquote>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non eum aliquid molestiae atque, quidem sint laborum recusandae tenetur beatae earum vitae ducimus quis enim quisquam voluptatum. Voluptatem adipisci sint quo.</blockquote>
-                                        <h3 class="text-first-color">NOMBRE DEL CLIENTE</h3>
-                                        <h6>Puesto del cliente</h6>
+                                    <li class="slide"><img class="avatar" src="assets/freecodecamp-responsive web desing.jfif" alt="Cliente 3">
+                                        <blockquote>Diseño Web, muy importante para plasmar de la mejor manera la idea de un cliente, de forma responsiva para adaptarse a cualquier dispositivo.</blockquote>
+                                        <h3 class="text-first-color">Responsive Web Desing</h3>
+                                        <h6>Free Code Camp</h6>  <!-- Curso 3 -->
                                     </li>
-                                    <li class="slide"><img class="avatar" src="assets/customer-2.jpg" alt="Cliente 4">
-                                        <blockquote>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non eum aliquid molestiae atque, quidem sint laborum recusandae tenetur beatae earum vitae ducimus quis enim quisquam voluptatum. Voluptatem adipisci sint quo.</blockquote>
-                                        <h3 class="text-first-color">NOMBRE DEL CLIENTE</h3>
-                                        <h6>Puesto del cliente</h6>
+                                    <li class="slide"><img class="avatar" src="assets/EDteam-react.png" alt="Cliente 4">
+                                        <blockquote>Curso finalizado de React, a mi entender la bibloteca mas completa y mas usada en el mundo del Frontend, para darle mejor utilidad al lenguaje de JavaScript.</blockquote>
+                                        <h3 class="text-first-color">React</h3>
+                                        <h6>ED Team</h6>  <!-- Curso 4 -->
                                     </li>
                                 </ul>
 
@@ -506,7 +502,7 @@
                         <path d="M31.8125 1.5625L25.3125 0.0625C24.625 -0.125 23.875 0.25 23.5625 0.9375L20.5625 7.9375C20.3125 8.5625 20.5 9.25 21 9.6875L24.8125 12.8125C22.5625 17.5625 18.625 21.5625 13.75 23.875L10.625 20.0625C10.1875 19.5625 9.5 19.375 8.875 19.625L1.875 22.625C1.1875 22.9375 0.875 23.6875 1 24.375L2.5 30.875C2.6875 31.5625 3.25 32 4 32C20 32 33 19.0625 33 3C33 2.3125 32.5 1.75 31.8125 1.5625Z" fill="#D90062"/>
                         </svg>                        
                     <h5>TELEFONO</h5>
-                    <small><a href="tel:3496501173">(+49)3496501173</a></small>
+                    <small><a href="tel:3496501173">(+54)3496501173</a></small>
                 </aside>
 
                 <!-- Email -->
