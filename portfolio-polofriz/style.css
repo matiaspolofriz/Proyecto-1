@@ -249,6 +249,12 @@ p {
     .contact-form textarea,
     .contact-form-loader {
         grid-column: span 2;
+        
+    }
+    .contact-form-loader {
+        grid-column: span 2;
+        width: 15px;
+        height: 15px;
     }
 
     .contact-form input[type="submit"] {
