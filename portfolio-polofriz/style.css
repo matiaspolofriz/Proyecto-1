@@ -697,7 +697,7 @@ progress::-moz-progress-bar{
 .img-proyecto {
     display: flex;
     width: 300px;
-    height: 190px;
+    height: 150px; /* 300px por 150px */
     align-items: center;
 }
 
