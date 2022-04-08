@@ -4,4 +4,4 @@ Repositorios del Portfolio Polo Friz
 
 ## Portfolio
 
--[Portfolio-CV](https://matiaspolofriz.github.io/proyecto-1/proyecto-1)
+-[Portfolio-CV](https://matiaspolofriz.github.io/proyecto-1/portfolio-polofriz/)
