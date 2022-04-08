@@ -576,7 +576,7 @@ progress::-moz-progress-bar{
 /* cartas de contacto */
 .contact-card {
     margin: 1rem auto; /* separar entre ellas */ 
-    padding: 1rem; /* separar de su contenido */
+    /* padding: 1rem;  separar de su contenido */
     width: 100%; 
     height: 144px;
     display: flex;
