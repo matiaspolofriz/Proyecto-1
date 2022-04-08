@@ -282,7 +282,7 @@ p {
 /* estetica del titulo */
 .hero-image-title {
     color: var(--hero-text-color); /* reutilizado del html */
-    font-size: 4.5vw; /* 4,5% del tamaño de la pantalla */
+    font-size: 6.5vw; /* 4,5% del tamaño de la pantalla */
 
 }
 
