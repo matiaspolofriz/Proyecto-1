@@ -1,150 +1,142 @@
 /****************** Custom Properties ******************/
 :root {
- --first-color: #d90062;
- --first-alpha-color: rgba(217, 0, 98, 0.75);
- --second-color: #14192D;
- --second-alpha-color: rgba(20, 25, 45, 0.75);
- --third-color: #501464;
- --third-alpha-color: rgba(80, 20, 100, 0.75);
- --white-color: #fff;
- --gray-light-color: #f3f3f3;
- --gray-color: #ccc;
- --gray-dark-color: #666;
- --black-color: #000;
- --link-color: #509ee3;
- --title-color: #333;
- --text-color: #222;
- --while-alpha-color: rgba(255,255,255,0.5);
- --black-alpha-color: rgba(0,0,0,0.5);
- --font: "Raleway", sans-serif;
- --max-width: 1200px;
- --header-height: 3rem; /* ERRORRRRR ancho de la barra azul de arriba*/
-
-
-
-
+  --first-color: #d90062;
+  --first-alpha-color: rgba(217, 0, 98, 0.75);
+  --second-color: #14192d;
+  --second-alpha-color: rgba(20, 25, 45, 0.75);
+  --third-color: #501464;
+  --third-alpha-color: rgba(80, 20, 100, 0.75);
+  --white-color: #fff;
+  --gray-light-color: #f3f3f3;
+  --gray-color: #ccc;
+  --gray-dark-color: #666;
+  --black-color: #000;
+  --link-color: #509ee3;
+  --title-color: #333;
+  --text-color: #222;
+  --while-alpha-color: rgba(255, 255, 255, 0.5);
+  --black-alpha-color: rgba(0, 0, 0, 0.5);
+  --font: "Raleway", sans-serif;
+  --max-width: 1200px;
+  --header-height: 3rem; /* ERRORRRRR ancho de la barra azul de arriba*/
 }
 /****************** Reset ******************/
 html {
-    box-sizing: border-box;
-    font-family: var(--font);
-    font-size: 16px;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 16px;
+  scroll-behavior: smooth;
 }
 
-*
-*::after,
-*::before{
-    box-sizing: inherit;
+* *::after,
+*::before {
+  box-sizing: inherit;
 }
 
 body {
-    margin: 0;
-    overflow-x: hidden;    /* sin scroll horizontal */
-    color: var(--text-color);
+  margin: 0;
+  overflow-x: hidden; /* sin scroll horizontal */
+  color: var(--text-color);
 }
 
 a {
-    color: var(--link-color);
-    transition: all 0.5s ease-out;
+  color: var(--link-color);
+  transition: all 0.5s ease-out;
 }
 
-a:hover{
-    opacity: 0.75;
+a:hover {
+  opacity: 0.75;
 }
 
 h1 {
-    margin: 0;
-    font-size: 2rem;
+  margin: 0;
+  font-size: 2rem;
 }
 
 h2 {
-    margin: 0;
-    font-size: 1.5rem;
+  margin: 0;
+  font-size: 1.5rem;
 }
 
 h3 {
-    margin: 0;
-    font-size: 1.25rem;
+  margin: 0;
+  font-size: 1.25rem;
 }
 
 h4 {
-    margin: 0;
-    font-size: 1rem;
+  margin: 0;
+  font-size: 1rem;
 }
 
 h5 {
-    margin: 0;
-    font-size: 0.85rem;
+  margin: 0;
+  font-size: 0.85rem;
 }
 
 h6 {
-    margin: 0;
-    font-size: 0.7rem;
+  margin: 0;
+  font-size: 0.7rem;
 }
 
-img { /* img responsive */
-    max-width: 100%; 
-    height: auto;
+img {
+  /* img responsive */
+  max-width: 100%;
+  height: auto;
 }
 
 p {
-    line-height: 1.6;
+  line-height: 1.6;
 }
-
-
-
 
 /****************** Components reutilizables ******************/
 
-
 /****************** Carousel ******************/
 .carousel {
-    margin: 2rem auto;
-    padding: 2rem 0;
-    max-width: 800px;
-    text-align: center;
-    overflow-x: hidden;  
-    background-color: var(--carousel-bg-color);
+  margin: 2rem auto;
+  padding: 2rem 0;
+  max-width: 800px;
+  text-align: center;
+  overflow-x: hidden;
+  background-color: var(--carousel-bg-color);
 }
 
 .carousel .slides {
-    padding-left: 0;
-    width: 400%;  /* 100% por cada slide */
-    display: flex;
-    list-style: none;
-    transition: transform 0.5s ease-in-out;
+  padding-left: 0;
+  width: 400%; /* 100% por cada slide */
+  display: flex;
+  list-style: none;
+  transition: transform 0.5s ease-in-out;
 }
 
 .carousel input {
-    display: none; /* ocultar */
+  display: none; /* ocultar */
 }
 
 .carousel label {
-    border: medium solid var(--gray-dark-color);
-    border-radius: 50%;
-    margin: 0 0.25rem;
-    display: inline-block;
-    width: 0.75rem;
-    height: 0.75rem;
-    cursor: pointer;
+  border: medium solid var(--gray-dark-color);
+  border-radius: 50%;
+  margin: 0 0.25rem;
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  cursor: pointer;
 }
 
 /* para mover los slides */
 #slide-1:checked ~ .slides {
-    transform: translateX(0%) /* dividido el numero de slides */
+  transform: translateX(0%); /* dividido el numero de slides */
 }
 
 #slide-2:checked ~ .slides {
-    transform: translateX(-25%) 
+  transform: translateX(-25%);
 }
 
 #slide-3:checked ~ .slides {
-    transform: translateX(-50%) 
+  transform: translateX(-50%);
 }
 
 #slide-4:checked ~ .slides {
-    transform: translateX(-75%) 
+  transform: translateX(-75%);
 }
 
 /* color de los puntitos */
@@ -152,698 +144,678 @@ p {
 #slide-2:checked ~ .slides-nav label#dot-2,
 #slide-3:checked ~ .slides-nav label#dot-3,
 #slide-4:checked ~ .slides-nav label#dot-4 {
-    background-color: var(--gray-dark-color);
+  background-color: var(--gray-dark-color);
 }
-
-
-
 
 /****************** Contact Form ******************/
 
 /* tamaño del formulario*/
 .contact-form {
-    margin: 2rem auto;
-    padding: 1rem;
-    max-width: 800px;
-    max-height: 320px;
-
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 800px;
+  max-height: 320px;
 }
 
 /* recuadros del formulario*/
 .contact-form > * {
-    padding: 0rem; /* DIFERENTE */
-    margin: 1rem auto;
-    display: block;
-    width: 100%;
+  padding: 0rem; /* DIFERENTE */
+  margin: 1rem auto;
+  display: block;
+  width: 100%;
 }
 
 /* cambio de letras del formulario*/
 .contact-form input,
 .contact-form textarea {
-    font-size: .85rem;
-    font-family: var(--font);
+  font-size: 0.85rem;
+  font-family: var(--font);
 }
 
 /* solo deja un borda abajo en "nombre" y "email" */
 .contact-form input {
-    border: 0;
-    border-bottom: thin solid var(--gray-dark-color);
-    padding-left: 0;
+  border: 0;
+  border-bottom: thin solid var(--gray-dark-color);
+  padding-left: 0;
 }
 
 .contact-form textarea {
-    border: thin solid --gray-dark-color;
-    resize: none; /* para no poder cambiar la caja de comentarios */
+  border: thin solid --gray-dark-color;
+  resize: none; /* para no poder cambiar la caja de comentarios */
 }
 
 /* para que aparezca la manito en el boton "enviar" */
 .contact-form input[type="submit"] {
-    margin-top: 0;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
+  margin-top: 0;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 /* opacidad cuando pasamos por encima de "enviar"*/
 .contact-form input[type="submit"]:hover {
-    opacity: .75;
+  opacity: 0.75;
 }
 
 /* color de letra en el formulario */
 .contact-form *::placeholder {
-    color: var(--gray-dark-color);
+  color: var(--gray-dark-color);
 }
 
 /* para que aparezca el mensaje de agradecimiento */
 .modal#gracias:target {
-    opacity: 1;
-    pointer-events: auto;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .contact-form-response {
-    padding: 1rem;
-    width: 400px;
-    text-align: center;
-    background-color: var(--white-color);
+  padding: 1rem;
+  width: 400px;
+  text-align: center;
+  background-color: var(--white-color);
 }
 
 /* color de la carita */
 .contact-form-response svg {
-    margin-top: 2rem;
-    width: 4rem;
-    height: 4rem;
-    fill: var(--first-color);
+  margin-top: 2rem;
+  width: 4rem;
+  height: 4rem;
+  fill: var(--first-color);
 }
 
 @media screen and (min-width: 1024px) {
-    .contact-form{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        column-gap: 1rem;
-    }
+  .contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+  }
 
-    .contact-form input,
-    .contact-form textarea {
-       font-size: 1rem;
-    }
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem;
+  }
 
-    .contact-form textarea,
-    .contact-form-loader {
-        grid-column: span 2;
-    }
+  .contact-form textarea,
+  .contact-form-loader {
+    grid-column: span 2;
+  }
 
-    .contact-form input[type="submit"] {
-        margin-left: 0;
-    }
+  .contact-form input[type="submit"] {
+    margin-left: 0;
+  }
 }
-
 
 /****************** Hero Image ******************/
 
 /* imagen de fondo */
 .hero-image {
-    background-image:var(--hero-image); /* imagen de fondo */
-    background-repeat: no-repeat;
-    background-size: cover; /* proporcional al contenedor */
-    background-position: center; /* centrar imagen */
-    background-attachment: var(--hero-attachment); /* permanece fija la imagen, no se scrolea (creado en html) */
+  background-image: var(--hero-image); /* imagen de fondo */
+  background-repeat: no-repeat;
+  background-size: cover; /* proporcional al contenedor */
+  background-position: center; /* centrar imagen */
+  background-attachment: var(
+    --hero-attachment
+  ); /* permanece fija la imagen, no se scrolea (creado en html) */
 }
 
 /* opacidad de fondo */
 .hero-image-opacity {
-    width: 100%;
-    min-height: 100vh; /* minima altura */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: var(--hero-opacity-color); /* reutilizado del html */
+  width: 100%;
+  min-height: 100vh; /* minima altura */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--hero-opacity-color); /* reutilizado del html */
 }
 
 /* estetica del titulo */
 .hero-image-title {
-    color: var(--hero-text-color); /* reutilizado del html */
-    font-size: 6.5vw; /* 4,5% del tamaño de la pantalla */
-
+  color: var(--hero-text-color); /* reutilizado del html */
+  font-size: 6.5vw; /* 4,5% del tamaño de la pantalla */
 }
 
 .hero-image-content {
-    width: 100%;
-    min-width: 320px;
-
+  width: 100%;
+  min-width: 320px;
 }
-
-
-
-
-
 
 /****************** Menu ******************/
 
 /* boton del menu */
 .menu-btn {
-    outline: thin solid var(--first-color); /* borde solido del boton menu */
-    border: 0;  /* quitamos bordes */
-    cursor: pointer;       /* cursor del mause */
-    background-color: var(--second-color);
+  outline: thin solid var(--first-color); /* borde solido del boton menu */
+  border: 0; /* quitamos bordes */
+  cursor: pointer; /* cursor del mause */
+  background-color: var(--second-color);
 }
 
 .menu-btn svg {
-    fill: var(--first-color); /* color bordes boton */
+  fill: var(--first-color); /* color bordes boton */
 }
 
 /* vision del menu abierto */
 .menu {
-    position: fixed; 
-    left: 0; /* donde fijamos el menu */
-    bottom: var(--header-height); /* tamaño de la atura de la cabecera */
-    width: 100%; /* ancho */
-    background-color: var(--second-color);
-    display: flex; 
-    flex-direction: column;
-    opacity: 0; /*transparencia cuando el menu esta cerrado */
-    pointer-events: none; /* el cursor no reacciona ante la interactividad*/ 
-    transition: opacity .5s ease; /* transicion de opacidad para que no sea de golpe */
+  position: fixed;
+  left: 0; /* donde fijamos el menu */
+  bottom: var(--header-height); /* tamaño de la atura de la cabecera */
+  width: 100%; /* ancho */
+  background-color: var(--second-color);
+  display: flex;
+  flex-direction: column;
+  opacity: 0; /*transparencia cuando el menu esta cerrado */
+  pointer-events: none; /* el cursor no reacciona ante la interactividad*/
+  transition: opacity 0.5s ease; /* transicion de opacidad para que no sea de golpe */
 }
 
- /* vision de la actividad menu abierto */
+/* vision de la actividad menu abierto */
 .menu.is-active {
-    opacity: 1; /* tranparencia del menu abierto */
-    pointer-events: auto; /* el cursor reacciona a la interaccion */
+  opacity: 1; /* tranparencia del menu abierto */
+  pointer-events: auto; /* el cursor reacciona a la interaccion */
 }
 
 /* estetica del menu abierto*/
 .menu a {
-    padding: 1rem; /* espacio a los 4 lados */
-    font-size: 1.5rem; /* tamaño de letra */
-    font-weight: bold; /* en negrita - bold */
-    text-align: center; /* centrar texto */
-    text-decoration: none; /* quitamos text-decoration */
-    color: var(--first-color);
+  padding: 1rem; /* espacio a los 4 lados */
+  font-size: 1.5rem; /* tamaño de letra */
+  font-weight: bold; /* en negrita - bold */
+  text-align: center; /* centrar texto */
+  text-decoration: none; /* quitamos text-decoration */
+  color: var(--first-color);
 }
 
 /* cuando nos posicionamos en el menu abierto */
 .menu a:hover {
-    color: var(--white-color); /* color letra */
-    background-color: var(--first-color); /* fondo */
+  color: var(--white-color); /* color letra */
+  background-color: var(--first-color); /* fondo */
 }
 
 /* empieza menu en version escritorio */
 @media screen and (min-width: 1024px) {
-    .menu-btn {
-    display: none;} /* borrar el boton de menu */
+  .menu-btn {
+    display: none;
+  } /* borrar el boton de menu */
 
-    .menu {
+  .menu {
     position: static;
     width: auto;
     flex-direction: row;
     opacity: 1;
     pointer-events: auto;
-}
+  }
 
-    .menu a {
+  .menu a {
     padding: 0 1rem;
-}
+  }
 
-    .menu a:last-child { /*ultimo elemento del lado derecho */
-    padding-right: 0; 
-}
+  .menu a:last-child {
+    /*ultimo elemento del lado derecho */
+    padding-right: 0;
+  }
 
-    .menu a:hover {
+  .menu a:hover {
     background-color: transparent;
-}
+  }
 } /* termina menu en version escritorio */
-
-
-
 
 /****************** Modal ******************/
 
 /* ventana modal */
 .modal {
-    position: fixed;
-    z-index: 999; /* por encima de cualquier contenido */
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--black-alpha-color);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 1s;
+  position: fixed;
+  z-index: 999; /* por encima de cualquier contenido */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black-alpha-color);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s;
 }
 
 .modal-content {
-    position: relative;
+  position: relative;
 }
 
 /* posicion de boton "X" de la ventana modal */
 .modal-close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 
 /* estetica del boton "X" de la ventana modal */
 .modal-close svg {
-    width: 3rem;
-    height: 3rem;
-    fill: var(--first-color)
+  width: 3rem;
+  height: 3rem;
+  fill: var(--first-color);
 }
 
 /* para abrir la ventana modal */
 .modal[id|="trabajo"]:target {
-    opacity: 1;
-    pointer-events: auto;
+  opacity: 1;
+  pointer-events: auto;
 }
-
-
 
 /****************** ProgressBar ******************/
 
+.habilidades {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
 progress {
-    width: 100%; /* ancho de barra */
-    height: 1rem;
-    background-color: var(--gray-color);
+  width: 100%; /* ancho de barra */
+  height: 0.3rem;
+  background-color: var(--gray-color);
 }
 
 /* color de fondo de la barra */
 progress::-webkit-progress-bar {
-    background-color: var(--gray-color); 
-} 
+  background-color: var(--gray-color);
+}
 
 /* color principal de la barra */
 progress::-webkit-progress-value {
-    background-color: var(--gray-dark-color); 
-} 
+  background-color: var(--gray-dark-color);
+}
 
 /* para firefox */
-progress::-moz-progress-bar{
-    background-color: var(--gray-dark-color);
+progress::-moz-progress-bar {
+  background-color: var(--gray-dark-color);
 }
 
 /* margen de las barras */
 .progress {
-    margin: 1rem auto;
+  margin: 1rem 1rem;
 }
 
 /* parrafo de la barra */
 .progress > p {
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    font-size: .85rem; /* achico la letra */
-} 
-
-
-
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem; /* achico la letra */
+}
 
 /****************** Utilities para reutilizar ******************/
 
 .avatar {
-   /*  border-radius: 50%; */
-    width: 450px;
-    height: 300px;
-} 
+  /*  border-radius: 50%; */
+  width: 450px;
+  height: 300px;
+}
 
 /* Fondo gris claro "servicios" */
 .bg-gray-light {
-    background-color:var(--gray-light-color);
+  background-color: var(--gray-light-color);
 }
 
 /* sombreado */
 .box-shadow-1 {
-    box-shadow: 0.25rem 0.25rem 1rem rgba(0,0,0,0.25);
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
 }
 
 .btn {
-    border-radius: 0.5rem; 
-    padding: 1rem; 
-    display: inline-block; 
-    width: 200px; 
-    font-weight: bold; /* grosor */
-    text-align: center;
-    text-decoration: none; /* la linea de los enlaces las sacamos */
-    color: var(--white-color); 
-    background-color: var(--first-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: inline-block;
+  width: 200px;
+  font-weight: bold; /* grosor */
+  text-align: center;
+  text-decoration: none; /* la linea de los enlaces las sacamos */
+  color: var(--white-color);
+  background-color: var(--first-color);
 }
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--max-width);
 }
 
 /* foto perfil - escala de grises */
 .gray-scale {
-    filter: grayscale(1);
-    border-radius: 10%;
+  filter: grayscale(1);
+  border-radius: 10%;
 }
 
 .iconos {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 /* para ocultar la cruz del boton */
-.none { 
-    display: none;
+.none {
+  display: none;
 }
 
 /* espacio del contenedor para su contenido */
-.section { 
-    padding: 2rem 1rem;
+.section {
+  padding: 2rem 1rem;
 }
 
 /* lineas rojas de los titulos de cada articulo */
 .section-title {
-    border-top: thin solid var(--first-color); /* linea delgada y solida*/
-    border-bottom: thin solid var(--first-color);
-    margin: 2rem auto; /* margen en el contenedor*/
-    padding: .5rem 1rem; /* entre el titulo y la linea*/
-    width: 250px; /* ancho de linea */
-    text-align: center;
-    color: var(--title-color);
+  border-top: thin solid var(--first-color); /* linea delgada y solida*/
+  border-bottom: thin solid var(--first-color);
+  margin: 2rem auto; /* margen en el contenedor*/
+  padding: 0.5rem 1rem; /* entre el titulo y la linea*/
+  width: 250px; /* ancho de linea */
+  text-align: center;
+  color: var(--title-color);
 }
 
-.text-first-color{
-    color: var(--first-color);
+.text-first-color {
+  color: var(--first-color);
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .text-right {
-    text-align: right;
+  text-align: right;
 }
 
 .text-left {
+  text-align: left;
+}
+
+@media screen and (min-width: 1024px) {
+  .full-lg-screen {
+    width: 100%; /* minima anchura */
+    min-height: 100vh; /* minima altura */
+  }
+
+  .text-lg-center {
+    text-align: center;
+  }
+
+  .text-lg-right {
+    text-align: right;
+  }
+
+  .text-lg-left {
     text-align: left;
+  }
 }
-
-@media screen and (min-width: 1024px){
-    .full-lg-screen {
-        width:100%; /* minima anchura */
-        min-height:100vh; /* minima altura */
-    }      
-
-    .text-lg-center {
-        text-align: center;
-    }
-    
-    .text-lg-right {
-        text-align: right;
-    }
-    
-    .text-lg-left {
-        text-align: left;
-    }
-}
-
-
-
 
 /****************** Site Styles (Estilos particulares) ******************/
 
 /* espacio entre los article */
-.about > article { /* separacion de los articulos entre si */
-    margin-bottom: 2rem;
-} 
+.about > article {
+  /* separacion de los articulos entre si */
+  margin-bottom: 2rem;
+}
 
 /* cartas de contacto */
 .contact-card {
-    margin: 1rem auto; /* separar entre ellas */ 
-    /* padding: 1rem;  separar de su contenido */
-    width: 100%; 
-    height: 144px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  margin: 1rem auto; /* separar entre ellas */
+  /* padding: 1rem;  separar de su contenido */
+  width: 100%;
+  height: 144px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* color al icono social media y mismo tamaño todos */
 .contact-card > svg {
-    fill: var(--first-color);
-    width: 2rem;
-    height: 2rem;
+  fill: var(--first-color);
+  width: 2rem;
+  height: 2rem;
 }
 .contact-card > small {
-    margin-top: -1rem;
+  margin-top: -1rem;
 }
 
 /* Footer */
 .footer {
-    margin-bottom: var(--header-height);
-    color: var(--white-color);
-    text-align: center;
-    padding: .5rem;
-    background-color: var(--second-color);
+  margin-bottom: var(--header-height);
+  color: var(--white-color);
+  text-align: center;
+  padding: 0.5rem;
+  background-color: var(--second-color);
 }
 
 /* estetica del menu cerrado */
 .header {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 999;
-    padding: 1;  /* altura del header */             /* DIFERENTE */
-    width: 100%;
-    height: var(--header-height);
-    background-color: var(--second-color);
-    
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  padding: 1; /* altura del header */ /* DIFERENTE */
+  width: 100%;
+  height: var(--header-height);
+  background-color: var(--second-color);
 }
 
 /* distribucion del menu cerrado */
 .header > .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* logo "MATIASPOLOFRIZ" */
 .logo a {
-    color: var(--first-color);
-    font-weight: bold; /* negrita de la letra */
-    font-size: 1.75rem; /* tamaño de la letra */
-    text-decoration: none;  
+  color: var(--first-color);
+  font-weight: bold; /* negrita de la letra */
+  font-size: 1.75rem; /* tamaño de la letra */
+  text-decoration: none;
 }
 
 .portfolio-card {
-    position: relative;
-    width: 100%;
-    margin: 0 auto; /* sin espacio entre las img */
-    display: block; /* una img debajo de la otra */
+  position: relative;
+  width: 100%;
+  margin: 0 auto; /* sin espacio entre las img */
+  display: block; /* una img debajo de la otra */
 }
 
 /* Estetica de las img */
 .portfolio-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /*  Mantener tamaño de la img */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*  Mantener tamaño de la img */
 }
 
 /* Estetica de la informacion */
 .portfolio-card-info {
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* width: 100%; 
-    height: 100%;     */         /* DIFERENTE */
-    padding: 1em;                      
-    background-color: var(--first-alpha-color);
-    color: var(--white-color);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* width: 100%; 
+    height: 100%;     */ /* DIFERENTE */
+  padding: 1em;
+  background-color: var(--first-alpha-color);
+  color: var(--white-color);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
 }
-
 
 /* Proyecto HOVER (cuando pasamos por encima) */
 .portfolio-card:hover .portfolio-card-info {
-    opacity: 1;
-    pointer-events: auto;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* Recuadro blanco de cada proyecto */
 .portfolio-card-info > div {
-    /* padding: 1em; */          /* DIFERENTE */
-    border: thin solid var(--white-color);
-    width: 100%; 
-    height: 100%; 
+  /* padding: 1em; */ /* DIFERENTE */
+  border: thin solid var(--white-color);
+  width: 100%;
+  height: 100%;
 }
 
 /* centrar el titulo del proyecto */
 .portfolio-card-info > div > h3 {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* estetica del cuadrito que se abre en cada proyecto */
 .portfolio-modal {
-    padding: 1rem;
-    max-width: 400px; /* para no deformar la img */
-    display: flex;
-    flex-direction: column;
-    background-color: var(--white-color);
-    align-items: center;
+  padding: 1rem;
+  max-width: 400px; /* para no deformar la img */
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-color);
+  align-items: center;
 }
 
 .img-proyecto {
-    display: flex;
-    width: 300px;
-    height: 150px; /* 300px por 150px */
-    align-items: center;
+  display: flex;
+  width: 300px;
+  height: 150px; /* 300px por 150px */
+  align-items: center;
 }
 
 /* subrayado del titulo de cada proyecto */
 .portfolio-modal h3 {
-    border-bottom: medium solid var(--first-color);
-    padding: 0.5rem 0;
-    margin: 1rem auto;
-    color: var(--title-color);
+  border-bottom: medium solid var(--first-color);
+  padding: 0.5rem 0;
+  margin: 1rem auto;
+  color: var(--title-color);
 }
 
 /* detalles finales del cuadro de cada proyecto */
 .portfolio-details {
-    display: grid;
-    grid-template-columns: 30% 70%; /* 40 a los titulos y 60 a la descripcion */
-    grid-auto-rows: 2rem; /* distancia de las filas implicitas */
+  display: grid;
+  grid-template-columns: 30% 70%; /* 40 a los titulos y 60 a la descripcion */
+  grid-auto-rows: 2rem; /* distancia de las filas implicitas */
 }
 
 /* Titulos de los cuadros de cada proyecto */
 .portfolio-details b {
-    color: var(--first-color);
+  color: var(--first-color);
 }
 
 /* Tarjetas de "servicios" */
 .service-card {
-    margin: 1rem auto;
-    padding: 1rem;
-    text-align: center;
+  margin: 1rem auto;
+  padding: 1rem;
+  text-align: center;
 }
 
 /* Estetica del titulo*/
 .service-card h3 {
-    color: var(--title-color);
+  color: var(--title-color);
 }
 
 /* Estetica del dibujo */
 .service-card svg {
-    fill: var(--first-color);
-    margin-bottom: 1.25rem; /* separacion del dibujo con el titulo*/
+  fill: var(--first-color);
+  margin-bottom: 1.25rem; /* separacion del dibujo con el titulo*/
 }
 
 /* separar los iconos y sacarle el subrayado */
 .social-media a {
-    text-decoration: none;
-    padding: 0 0.4rem;
+  text-decoration: none;
+  padding: 0 0.4rem;
 }
 
 .social-media svg {
-    width: 2rem;
-    height: 2rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 /* version tablet */
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
+  /* espacio entre las tarjetas */
+  .contact-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 46%);
+    justify-content: space-between;
+  }
 
-    /* espacio entre las tarjetas */
-    .contact-cards {
-        display: grid;
-        grid-template-columns: repeat(2,46%);
-        justify-content: space-between;
-    }
+  /* 2 columnas de "Portafolio" */
+  .portfolio > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
 
-    /* 2 columnas de "Portafolio" */
-    .portfolio > .container {
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-    }
+  /* titulo ocupe 2 espacios de la grid */
+  .portfolio .section-title {
+    grid-column: span 2;
+  }
 
-    /* titulo ocupe 2 espacios de la grid */
-    .portfolio .section-title {
-        grid-column: span 2; 
-     }
+  /* poner de costado el modal */
+  .portfolio-modal {
+    flex-direction: row;
+    max-width: 800px;
+  }
 
-     /* poner de costado el modal */
-     .portfolio-modal {
-         flex-direction: row;
-         max-width: 800px;
-     }
+  /* margen del texto del modal */
+  .portfolio-info {
+    margin-left: 1rem;
+    align-self: center;
+  }
 
-     /* margen del texto del modal */
-     .portfolio-info {
-         margin-left: 1rem;
-         align-self: center;
-     }
+  /* 2 columnas de "Servicios" */
+  .services > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    justify-content: space-between;
+    align-content: center;
+  }
 
-    /* 2 columnas de "Servicios" */
-    .services > .container {
-        display: grid;
-        grid-template-columns: repeat(2, 45%);
-        justify-content: space-between;
-        align-content: center;
-    }
-
-    /* titulo ocupe 2 espacios de la grid */
-    .services .section-title {
-       grid-column: span 2; 
-    }
+  /* titulo ocupe 2 espacios de la grid */
+  .services .section-title {
+    grid-column: span 2;
+  }
 }
 
-
 /* version escritorio */
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
+  /* 3 columnas de 'acerca' */
+  .about {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-between;
+    align-content: center;
+  }
 
-    /* 3 columnas de 'acerca' */
-    .about {
-        display: grid;
-        grid-template-columns: repeat(3, 30%);
-        justify-content: space-between;
-        align-content: center;
-    }
+  /* espacio entre las tarjetas */
+  .contact-cards {
+    grid-template-columns: repeat(4, 22%);
+  }
 
-    /* espacio entre las tarjetas */
-    .contact-cards {
-        grid-template-columns: repeat(4,22%);
-    }
+  /* Footer */
+  .footer {
+    margin-bottom: 0;
+  }
 
-    /* Footer */
-    .footer {
-        margin-bottom: 0;
-    }
+  .header {
+    position: sticky; /*entre la relativa y fijo, no toca los elementos de abajo */
+    top: 0; /* no tapa el contenido*/
+    padding: 1rem; /*altura del header escritorio */
+    height: calc(var(--header-height) - 1rem);
+  }
 
-    .header {
-        position: sticky; /*entre la relativa y fijo, no toca los elementos de abajo */
-        top: 0; /* no tapa el contenido*/
-        padding: 1rem; /*altura del header escritorio */
-        height: calc(var(--header-height) - 1rem);
-    }
+  /* 3 columnas de "Portafolio" */
+  .portfolio > .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    /* 3 columnas de "Portafolio" */
-    .portfolio > .container {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  /* titulo ocupe 3 espacios de la grid */
+  .portfolio .section-title {
+    grid-column: span 3;
+  }
 
-    /* titulo ocupe 3 espacios de la grid */
-    .portfolio .section-title {
-        grid-column: span 3; 
-     }
+  /* 3 columnas de 'service' */
+  .services > .container {
+    grid-template-columns: repeat(3, 30%);
+  }
 
-    /* 3 columnas de 'service' */
-    .services > .container {
-        grid-template-columns: repeat(3, 30%);
-       
-    }
-
-    /* titulo ocupe 3 espacios de la grid */
-    .services .section-title {
-       grid-column: span 3; 
-    }
-} 
+  /* titulo ocupe 3 espacios de la grid */
+  .services .section-title {
+    grid-column: span 3;
+  }
+}
