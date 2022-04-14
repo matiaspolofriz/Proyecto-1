@@ -404,7 +404,7 @@ p {
 
 .habilidades {
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(2, 50%);
 }
 
 progress {
