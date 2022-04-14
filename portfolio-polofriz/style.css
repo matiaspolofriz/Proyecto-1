@@ -234,23 +234,19 @@ p {
     font-size: 1rem;
   }
 
-<<<<<<< HEAD
   .contact-form textarea,
   .contact-form-loader {
     grid-column: span 2;
   }
-=======
-    .contact-form textarea,
-    .contact-form-loader {
-        grid-column: span 2;
-        
-    }
-    .contact-form-loader {
-        grid-column: span 2;
-        width: 15px;
-        height: 15px;
-    }
->>>>>>> 94f757baf4d49b2e46a1803f33d1d5dea599c362
+  .contact-form textarea,
+  .contact-form-loader {
+    grid-column: span 2;
+  }
+  .contact-form-loader {
+    grid-column: span 2;
+    width: 15px;
+    height: 15px;
+  }
 
   .contact-form input[type="submit"] {
     margin-left: 0;
