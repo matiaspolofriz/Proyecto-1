@@ -630,12 +630,14 @@ progress::-moz-progress-bar {
 .portfolio-card {
   position: relative;
   width: 100%;
+
   margin: 0 auto; /* sin espacio entre las img */
   display: block; /* una img debajo de la otra */
 }
 
 /* Estetica de las img */
 .portfolio-card img {
+  border-radius: 2%;
   width: 100%;
   height: 100%;
   object-fit: cover; /*  Mantener tamaño de la img */
@@ -646,6 +648,7 @@ progress::-moz-progress-bar {
   position: absolute;
   top: 0;
   left: 0;
+  border-radius: 2%;
   /* width: 100%; 
     height: 100%;     */ /* DIFERENTE */
   padding: 1em;
@@ -689,7 +692,7 @@ progress::-moz-progress-bar {
 .img-proyecto {
   display: flex;
   width: 300px;
-  height: 150px; /* 300px por 150px */
+  height: 300px; /* 300px por 150px */
   align-items: center;
 }
 
