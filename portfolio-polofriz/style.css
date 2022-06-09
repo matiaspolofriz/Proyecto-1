@@ -413,7 +413,7 @@ p {
 
 .habilidades {
   display: grid;
-  grid-template-columns: repeat(2, 50%);
+  grid-template-columns: repeat(3, 30%);
 }
 
 progress {
@@ -493,8 +493,15 @@ progress::-moz-progress-bar {
 }
 
 .iconos {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+/* letra-tecnologias*/
+.letra-tecnologias {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* para ocultar la cruz del boton */
