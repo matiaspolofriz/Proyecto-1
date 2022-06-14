@@ -339,7 +339,7 @@ p {
 
 /* cuando nos posicionamos en el menu abierto */
 .menu a:hover {
-  color: var(--first-color); /* color letra */
+  color: var(--white-color); /* color letra */
   background-color: var(--first-color); /* fondo */
 }
 
