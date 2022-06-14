@@ -280,7 +280,12 @@ p {
 /* estetica del titulo */
 .hero-image-title {
   color: var(--hero-text-color); /* reutilizado del html */
-  font-size: 6.5vw; /* 4,5% del tamaño de la pantalla */
+  font-size: 3.5vw; /* 4,5% del tamaño de la pantalla */
+}
+
+.hero-image-subTitle {
+  color: var(--hero-text-color); /* reutilizado del html */
+  font-size: 2vw; /* 4,5% del tamaño de la pantalla */
 }
 
 .hero-image-content {
@@ -329,12 +334,12 @@ p {
   font-weight: bold; /* en negrita - bold */
   text-align: center; /* centrar texto */
   text-decoration: none; /* quitamos text-decoration */
-  color: var(--first-color);
+  color: var(--white-color);
 }
 
 /* cuando nos posicionamos en el menu abierto */
 .menu a:hover {
-  color: var(--white-color); /* color letra */
+  color: var(--first-color); /* color letra */
   background-color: var(--first-color); /* fondo */
 }
 
@@ -410,10 +415,17 @@ p {
 }
 
 /****************** ProgressBar ******************/
+.div-tecnologias {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .habilidades {
   display: grid;
   grid-template-columns: repeat(3, 30%);
+  align-items: center;
+  justify-content: center;
 }
 
 progress {
@@ -446,7 +458,8 @@ progress::-moz-progress-bar {
 .progress > p {
   margin: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   font-size: 0.85rem; /* achico la letra */
 }
 
@@ -502,6 +515,8 @@ progress::-moz-progress-bar {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 0.85rem; /* achico la letra */
+  line-height: 1.6;
 }
 
 /* para ocultar la cruz del boton */
@@ -519,6 +534,16 @@ progress::-moz-progress-bar {
   border-top: thin solid var(--first-color); /* linea delgada y solida*/
   border-bottom: thin solid var(--first-color);
   margin: 2rem auto; /* margen en el contenedor*/
+  padding: 0.5rem 1rem; /* entre el titulo y la linea*/
+  width: 250px; /* ancho de linea */
+  text-align: center;
+  color: var(--title-color);
+}
+
+.section-title2 {
+  border-top: thin solid var(--first-color); /* linea delgada y solida*/
+  border-bottom: thin solid var(--first-color);
+  margin: auto; /* margen en el contenedor*/
   padding: 0.5rem 1rem; /* entre el titulo y la linea*/
   width: 250px; /* ancho de linea */
   text-align: center;
