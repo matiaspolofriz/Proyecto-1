@@ -1,7 +1,3 @@
-# Proyecto 1
+# Portfolio-js
 
-Repositorios del Portfolio Polo Friz
-
-## Portfolio
-
--[Portfolio-CV](https://matiaspolofriz.github.io/proyecto-1/portfolio-polofriz/)
+-[Portfolio-CV](https://matiaspolofriz.github.io/portfolio-js/portfolio-polofriz/)
