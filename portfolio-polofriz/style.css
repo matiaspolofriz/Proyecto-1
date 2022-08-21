@@ -655,17 +655,17 @@ progress::-moz-progress-bar {
 .portfolio-card {
   position: relative;
   width: 100%;
-
   margin: 0 auto; /* sin espacio entre las img */
   display: block; /* una img debajo de la otra */
 }
 
 /* Estetica de las img */
 .portfolio-card img {
-  border-radius: 2%;
+  border-radius: 5%;
   width: 100%;
   height: 100%;
   object-fit: cover; /*  Mantener tamaño de la img */
+  border: solid white;
 }
 
 /* Estetica de la informacion */
@@ -673,10 +673,10 @@ progress::-moz-progress-bar {
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 2%;
+  border-radius: 5%;
   /* width: 100%; 
     height: 100%;     */ /* DIFERENTE */
-  padding: 1em;
+  padding: 1rem;
   background-color: var(--first-alpha-color);
   color: var(--white-color);
   opacity: 0;
@@ -717,7 +717,7 @@ progress::-moz-progress-bar {
 .img-proyecto {
   display: flex;
   width: 300px;
-  height: 300px; /* 300px por 150px */
+  height: 180px; /* 300px por 180px */
   align-items: center;
 }
 
